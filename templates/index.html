@@ -1,0 +1,18 @@
+{% load rbac_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+    <style>
+        {% rbac_css %}
+    </style>
+</head>
+<body>
+    {% rbac_menu request %}
+</body>
+
+<script>
+    {% rbac_js %}
+</script>
+</html>
